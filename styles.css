@@ -1,0 +1,79 @@
+/* styles.css — базова стилізація */
+:root{
+  --max-w:1200px;
+  --accent:#111;
+  --muted:#666;
+  --gap:20px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:#222;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+.container{
+  width:90%;
+  max-width:var(--max-w);
+  margin:0 auto;
+  padding:0 10px;
+}
+.header{
+  background:#fff;
+  border-bottom:1px solid #eee;
+  position:sticky;
+  top:0;
+  z-index:50;
+}
+.header__inner{
+  display:flex;
+  gap:var(--gap);
+  align-items:center;
+  justify-content:space-between;
+  padding:16px 0;
+}
+.logo{font-weight:700; text-decoration:none; color:var(--accent)}
+.nav__list{list-style:none;margin:0;padding:0;display:flex;gap:18px;align-items:center}
+.nav__item a{text-decoration:none;color:var(--muted);font-weight:600}
+.header__contacts{display:flex;gap:12px;align-items:center}
+#nav-toggle{display:none;background:none;border:0;font-size:20px}
+
+/* Hero */
+.hero{padding:80px 0;background:linear-gradient(180deg,#f7f7f8 0,#fff 100%);text-align:center}
+.hero__inner h1{font-size:2.4rem;margin:0 0 12px}
+.lead{font-size:1.125rem;color:var(--muted);margin-bottom:14px}
+.hero blockquote{font-style:italic;color:#444;margin:16px auto;max-width:760px}
+
+/* Buttons */
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;cursor:pointer;border:1px solid transparent}
+.btn--primary{background:var(--accent);color:#fff}
+.btn--ghost{background:transparent;color:var(--accent);border:1px solid #eee}
+.btn--secondary{background:#333;color:#fff}
+.btn--small{padding:8px 12px;font-size:0.95rem}
+
+/* Sections */
+section{padding:56px 0}
+.about .columns{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:18px}
+.catalog .product-cards{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:20px}
+.product-card{border:1px solid #eee;padding:18px;width:260px;border-radius:10px;text-align:left;background:#fff;box-shadow:0 6px 18px rgba(16,24,40,0.03)}
+.product-media{height:150px;background:#f0f0f0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#999;margin-bottom:12px}
+.price{font-weight:700;color:var(--accent);margin:8px 0}
+
+/* Newsletter */
+#newsletter-form{display:flex;gap:10px;justify-content:center;align-items:center;margin-top:12px}
+#newsletter-form input[type="email"]{padding:10px;border-radius:8px;border:1px solid #ddd;min-width:220px}
+
+/* Footer */
+.footer{background:#0f1724;color:#fff;padding:24px 0;text-align:center}
+
+/* Responsive */
+@media (max-width:800px){
+  .about .columns{grid-template-columns:1fr}
+  .nav__list{display:none}
+  #nav-toggle{display:block}
+  .header__contacts{display:none}
+}
+.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}

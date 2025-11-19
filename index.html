@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YURE AVEOLA — Спортивний одяг</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">YURE AVEOLA</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about">Про нас</a></li>
+          <li class="nav__item"><a href="#catalog">Каталог</a></li>
+          <li class="nav__item"><a href="#info">Інфо</a></li>
+          <li class="nav__item"><a href="#contacts">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <a href="mailto:info@yure-aveola.example">info@yure-aveola.example</a>
+        <a class="phone" href="tel:+380995557878">+380 99 555 78 78</a>
+      </div>
+      <button id="nav-toggle" aria-label="Відкрити меню">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="Головний банер">
+      <div class="container hero__inner">
+        <h1>Ставай кращим щодня</h1>
+        <p class="lead">Колекція, що рухає тебе до мети — комфорт, стиль і технічні матеріали.</p>
+        <blockquote>«Кожен піт — це крок ближче до сили»</blockquote>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#catalog">Переглянути колекцію</a>
+          <a class="btn btn--ghost" href="#info">Детальніше</a>
+        </div>
+        <ul class="hero__tags" aria-hidden="true">
+          <li>Еластичність</li>
+          <li>Дихаючі тканини</li>
+          <li>Еко‑матеріали</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about__inner">
+        <h2>Про нас</h2>
+        <p>YURE AVEOLA — бренд спортивного одягу, створений для руху. Ми поєднали дизайн і технології, щоб надати комфорт у кожному тренуванні.</p>
+        <div class="columns">
+          <div>
+            <h3>Місія</h3>
+            <p>Надихати людей залишатися активними, незалежно від рівня підготовки.</p>
+          </div>
+          <div>
+            <h3>Якість</h3>
+            <p>Контроль на всіх етапах виробництва, сертифіковані матеріали, довговічні шви.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog">
+      <div class="container catalog__inner">
+        <h2>Каталог</h2>
+        <div class="product-cards" role="list">
+          <article class="product-card" role="listitem">
+            <div class="product-media" aria-hidden="true">Фото</div>
+            <h3>Футболка руху</h3>
+            <p class="price">₴799</p>
+            <a class="btn btn--small" href="#">Деталі</a>
+          </article>
+          <article class="product-card" role="listitem">
+            <div class="product-media" aria-hidden="true">Фото</div>
+            <h3>Легінси компресійні</h3>
+            <p class="price">₴1 299</p>
+            <a class="btn btn--small" href="#">Деталі</a>
+          </article>
+          <article class="product-card" role="listitem">
+            <div class="product-media" aria-hidden="true">Фото</div>
+            <h3>Сет для тренувань</h3>
+            <p class="price">₴2 199</p>
+            <a class="btn btn--small" href="#">Деталі</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container info__inner">
+        <h2>Корисна інформація</h2>
+        <ul class="info-list">
+          <li><strong>Оплата:</strong> Приват24, LiqPay, накладений платіж при доставці.</li>
+          <li><strong>Доставка:</strong> Укрпошта, Нова Пошта — 1–3 робочих дні.</li>
+          <li><strong>Повернення:</strong> Протягом 14 днів за умов збереження товару.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="newsletter" class="newsletter">
+      <div class="container newsletter__inner">
+        <h2>Підписка</h2>
+        <p>Отримайте -15% на перше замовлення.</p>
+        <form id="newsletter-form">
+          <label for="email" class="visually-hidden">Електронна пошта</label>
+          <input id="email" type="email" name="email" placeholder="Ваш email" required>
+          <button class="btn btn--secondary" type="submit">Підписатися</button>
+        </form>
+        <p id="newsletter-message" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+      <div class="container contacts__inner">
+        <h2>Контакти</h2>
+        <address>
+          <p>Email: <a href="mailto:info@yure-aveola.example">info@yure-aveola.example</a></p>
+          <p>Телефон: <a href="tel:+380995557878">+380 99 555 78 78</a></p>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© YURE AVEOLA — Усі права захищені.</p>
+      <p>Дизайн натхненний theyapassion.weblium.site</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
